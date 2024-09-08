@@ -1,0 +1,15 @@
+class Solution(object):
+    def isPalindrome(self, x):
+        """
+        :type x: int
+        :rtype: bool
+        using the trans to string method
+        """
+        if x < 0:
+            return False
+        trans = str(x)
+        return trans == trans[::-1] # decide True or False
+    
+    
+if __name__ == "__main__":
+    print(Solution().isPalindrome(34543))
